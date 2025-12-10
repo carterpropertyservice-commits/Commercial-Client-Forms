@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Discovery Questionnaire | Chris Carter, REALTOR®</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f5f5; color: #333; line-height: 1.6; }
+        .container { max-width: 800px; margin: 0 auto; padding: 20px; }
+        
+        header { background: #1a365d; color: white; padding: 30px; margin-bottom: 30px; border-bottom: 4px solid #c9a227; }
+        header h1 { font-size: 24px; margin-bottom: 5px; }
+        header p { opacity: 0.9; font-size: 14px; }
+        .agent-info { float: right; text-align: right; font-size: 13px; }
+        .agent-info strong { display: block; }
+        
+        .intro-box { background: #fdf6e3; border: 2px solid #c9a227; border-radius: 8px; padding: 20px; margin-bottom: 25px; }
+        .intro-box strong { color: #1a365d; }
+        .intro-box p { font-style: italic; margin-top: 8px; }
+        
+        .section { background: white; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); overflow: hidden; }
+        .section-header { background: #1a365d; color: white; padding: 12px 20px; font-weight: 600; font-size: 15px; }
+        .section-content { padding: 20px; }
+        
+        .question { margin-bottom: 20px; }
+        .question-text { font-weight: 500; margin-bottom: 8px; font-size: 14px; }
+        .question-number { color: #1a365d; font-weight: 600; }
+        
+        input[type="text"], input[type="email"], input[type="tel"], input[type="date"],
+        select, textarea { width: 100%; padding: 10px 12px; border: 1px solid #ddd; border-radius: 4px; font-size: 14px; transition: border-color 0.2s; }
+        input:focus, select:focus, textarea:focus { outline: none; border-color: #c9a227; }
+        textarea { resize: vertical; min-height: 80px; }
+        
+        .inline-group { display: flex; gap: 15px; flex-wrap: wrap; }
+        .inline-group .form-group { flex: 1; min-width: 200px; }
+        
+        .radio-group { display: flex; flex-wrap: wrap; gap: 15px; margin-top: 5px; }
+        .radio-item { display: flex; align-items: center; gap: 6px; }
+        .radio-item input { width: auto; }
+        
+        .submit-btn { background: #1a365d; color: white; border: none; padding: 14px 40px; font-size: 16px; font-weight: 600; border-radius: 4px; cursor: pointer; transition: background 0.2s; }
+        .submit-btn:hover { background: #2d4a7c; }
+        
+        .closing-box { background: #fdf6e3; border: 2px solid #c9a227; border-radius: 8px; padding: 20px; margin: 25px 0; }
+        .closing-box strong { color: #1a365d; }
+        .closing-box p { font-style: italic; margin-top: 8px; }
+        
+        .footer { text-align: center; padding: 30px; color: #666; font-size: 13px; }
+        .footer a { color: #1a365d; }
+        
+        @media (max-width: 600px) {
+            .agent-info { float: none; text-align: left; margin-top: 15px; }
+            .inline-group { flex-direction: column; }
+            .inline-group .form-group { min-width: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="agent-info">
+                <strong>Chris Carter, REALTOR®</strong>
+                Keller Williams Innovate<br>
+                NC License #353368
+            </div>
+            <h1>Client Discovery Questionnaire</h1>
+            <p>Precious Metals / Coin & Bullion Tenant</p>
+        </header>
+
+        <div class="intro-box">
+            <strong>OPENING:</strong>
+            <p>"To match you with the right commercial space, I'd like to understand your operational needs and requirements."</p>
+        </div>
+
+        <form action="https://formsubmit.co/Chris-Carter@KW.com" method="POST">
+            <input type="hidden" name="_subject" value="New Client Discovery Questionnaire Submission">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+
+            <div class="section">
+                <div class="section-header">Contact Information</div>
+                <div class="section-content">
+                    <div class="inline-group">
+                        <div class="form-group">
+                            <label>Your Name *</label>
+                            <input type="text" name="client_name" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Phone *</label>
+                            <input type="tel" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email *</label>
+                            <input type="email" name="email" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">A. Business Model</div>
+                <div class="section-content">
+                    <div class="question">
+                        <div class="question-text"><span class="question-number">1.</span> What transactions will you handle—coins, bullion, scrap gold, jewelry, appraisals? Please describe your business model.</div>
+                        <textarea name="q1_transactions" rows="3"></textarea>
+                    </div>
+                    <div class="question">
+                        <div class="question-text"><span class="question-number">2.</span> Do you expect high walk-in volume or mostly appointment-based customers?</div>
+                        <textarea name="q2_volume" rows="2"></textarea>
+                    </div>
+                    <div class="question">
+                        <div class="question-text"><span class="question-number">3.</span> How long have you been in business? Is this a new venture or a relocation?</div>
+                        <textarea name="q3_history" rows="2"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">B. Space Requirements</div>
+                <div class="section-content">
+                    <div class="question">
+                        <div class="question-text"><span class="question-number">4.</span> How much square footage do you need ideally? What's the minimum acceptable?</div>
+                        <textarea name="q4_sqft" rows="2"></textarea>
+                    </div>
+                    <div class="question">
+                        <div class="question-text"><span class="question-number">5.</span> Do you need showroom space, private office, back room, or vault space? Please describe your floor plan needs.</div>
+                        <textarea name="q5_floorplan" rows="3"></textarea>
+                    </div>
+                    <div class="question">
+                        <div class="question-text"><span class="question-number">6.</span> Any electrical needs—dedicated circuits, high-intensity lighting for grading/appraisals?</div>
+                        <textarea name="q6_electrical" rows="2"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">C. Security</div>
+                <div class="section-content">
+                    <div class="question">
+                        <div class="question-text"><span class="question-number">7.</span> What are your non-negotiable security features—cameras, reinforced glass, controlled access, vault?</div>
+                        <textarea name="q7_security" rows="3"></textarea>
+                    </div>
+                    <div class="question">
+                        <div class="question-text"><span class="question-number">8.</span> Do you need a discreet rear entrance for deliveries or armored car service?</div>
+                        <div class="radio-group">
+                            <label class="radio-item"><input type="radio" name="q8_rear" value="Yes"> Yes</label>
+                            <label class="radio-item"><input type="radio" name="q8_rear" value="No"> No</label>
+                            <label class="radio-item"><input type="radio" name="q8_rear" value="Nice to have"> Nice to have</label>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <div class="question-text"><span class="question-number">9.</span> What's the approximate inventory value you'll have on premises?</div>
+                        <select name="q9_inventory">
+                            <option value="">Select...</option>
+                            <option>Under $50,000</option>
+                            <option>$50,000 - $100,000</option>
+                            <option>$100,000 - $250,000</option>
+                            <option>$250,000 - $500,000</option>
+                            <option>$500,000+</option>
+                            <option>Prefer not to disclose</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">D. Location</div>
+                <div class="section-content">
+                    <div class="question">
+                        <div class="question-text"><span class="question-number">10.</span> Do you prefer high-visibility or a more discreet location? Why?</div>
+                        <textarea name="q10_visibility" rows="2"></textarea>
+                    </div>
+                    <div class="question">
+                        <div class="question-text"><span class="question-number">11.</span> How important is close parking or rear access to your operations?</div>
+                        <textarea name="q11_parking" rows="2"></textarea>
+                    </div>
+                    <div class="question">
+                        <div class="question-text"><span class="question-number">12.</span> Are there specific areas or submarkets you're targeting?</div>
+                        <textarea name="q12_areas" rows="2"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">E. Budget</div>
+                <div class="section-content">
+                    <div class="question">
+                        <div class="question-text"><span class="question-number">13.</span> What's your comfort range on monthly rent? Do you have a CAM ceiling?</div>
+                        <textarea name="q13_budget" rows="2"></textarea>
+                    </div>
+                    <div class="question">
+                        <div class="question-text"><span class="question-number">14.</span> Are you looking for a short-term lease or longer-term stability?</div>
+                        <div class="radio-group">
+                            <label class="radio-item"><input type="radio" name="q14_term" value="Short-term (1-2 years)"> Short-term (1-2 years)</label>
+                            <label class="radio-item"><input type="radio" name="q14_term" value="Medium (3-5 years)"> Medium (3-5 years)</label>
+                            <label class="radio-item"><input type="radio" name="q14_term" value="Long-term (5+ years)"> Long-term (5+ years)</label>
+                            <label class="radio-item"><input type="radio" name="q14_term" value="Flexible"> Flexible</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">F. Licensing</div>
+                <div class="section-content">
+                    <div class="question">
+                        <div class="question-text"><span class="question-number">15.</span> Will you buy precious metals from the public? (NC Sheriff Permit required)</div>
+                        <div class="radio-group">
+                            <label class="radio-item"><input type="radio" name="q15_permit" value="Yes"> Yes</label>
+                            <label class="radio-item"><input type="radio" name="q15_permit" value="No"> No</label>
+                            <label class="radio-item"><input type="radio" name="q15_permit" value="Unsure"> Unsure</label>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <div class="question-text"><span class="question-number">16.</span> Will you handle bullion transactions? (Some shopping centers restrict this)</div>
+                        <div class="radio-group">
+                            <label class="radio-item"><input type="radio" name="q16_bullion" value="Yes"> Yes</label>
+                            <label class="radio-item"><input type="radio" name="q16_bullion" value="No"> No</label>
+                            <label class="radio-item"><input type="radio" name="q16_bullion" value="Unsure"> Unsure</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">Timeline & Follow-Up</div>
+                <div class="section-content">
+                    <div class="question">
+                        <div class="question-text">What's your timeline for finding a space?</div>
+                        <div class="radio-group">
+                            <label class="radio-item"><input type="radio" name="timeline" value="Immediately"> Immediately (30 days)</label>
+                            <label class="radio-item"><input type="radio" name="timeline" value="1-3 months"> 1-3 months</label>
+                            <label class="radio-item"><input type="radio" name="timeline" value="3-6 months"> 3-6 months</label>
+                            <label class="radio-item"><input type="radio" name="timeline" value="6+ months"> 6+ months</label>
+                            <label class="radio-item"><input type="radio" name="timeline" value="Exploring"> Just exploring</label>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <div class="question-text">Best way to reach you?</div>
+                        <div class="radio-group">
+                            <label class="radio-item"><input type="radio" name="contact_pref" value="Phone"> Phone call</label>
+                            <label class="radio-item"><input type="radio" name="contact_pref" value="Text"> Text message</label>
+                            <label class="radio-item"><input type="radio" name="contact_pref" value="Email"> Email</label>
+                            <label class="radio-item"><input type="radio" name="contact_pref" value="Any"> Any method</label>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <div class="question-text">Anything else you'd like me to know?</div>
+                        <textarea name="additional_info" rows="3"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="closing-box">
+                <strong>CLOSING:</strong>
+                <p>"Thank you for this information. I'll narrow down options that meet your security, zoning, CAM, and layout requirements. I'll put together a short list and schedule tours for the best matches."</p>
+            </div>
+
+            <div style="text-align: center; padding: 20px;">
+                <button type="submit" class="submit-btn">Submit Questionnaire</button>
+            </div>
+        </form>
+
+        <div class="footer">
+            <p>Chris Carter, REALTOR® | Keller Williams Innovate | NC License #353368</p>
+            <p><a href="mailto:Chris-Carter@KW.com">Chris-Carter@KW.com</a></p>
+        </div>
+    </div>
+</body>
+</html>

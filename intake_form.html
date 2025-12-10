@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commercial Tenant Intake Form | Chris Carter, REALTOR®</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f5f5; color: #333; line-height: 1.6; }
+        .container { max-width: 800px; margin: 0 auto; padding: 20px; }
+        
+        header { background: #1a365d; color: white; padding: 30px; margin-bottom: 30px; border-bottom: 4px solid #c9a227; }
+        header h1 { font-size: 24px; margin-bottom: 5px; }
+        header p { opacity: 0.9; font-size: 14px; }
+        .agent-info { float: right; text-align: right; font-size: 13px; }
+        .agent-info strong { display: block; }
+        
+        .section { background: white; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); overflow: hidden; }
+        .section-header { background: #1a365d; color: white; padding: 12px 20px; font-weight: 600; font-size: 15px; }
+        .section-content { padding: 20px; }
+        
+        .form-group { margin-bottom: 18px; }
+        label { display: block; font-weight: 500; margin-bottom: 6px; font-size: 14px; }
+        .required::after { content: ' *'; color: #c53030; }
+        
+        input[type="text"], input[type="email"], input[type="tel"], input[type="date"], input[type="number"],
+        select, textarea { width: 100%; padding: 10px 12px; border: 1px solid #ddd; border-radius: 4px; font-size: 14px; transition: border-color 0.2s; }
+        input:focus, select:focus, textarea:focus { outline: none; border-color: #c9a227; }
+        textarea { resize: vertical; min-height: 80px; }
+        
+        .inline-group { display: flex; gap: 15px; flex-wrap: wrap; }
+        .inline-group .form-group { flex: 1; min-width: 200px; }
+        
+        .checkbox-group { display: flex; flex-wrap: wrap; gap: 12px; }
+        .checkbox-item { display: flex; align-items: center; gap: 8px; min-width: 180px; }
+        .checkbox-item input { width: auto; }
+        
+        .radio-group { display: flex; flex-wrap: wrap; gap: 15px; }
+        .radio-item { display: flex; align-items: center; gap: 6px; }
+        .radio-item input { width: auto; }
+        
+        .submit-btn { background: #1a365d; color: white; border: none; padding: 14px 40px; font-size: 16px; font-weight: 600; border-radius: 4px; cursor: pointer; transition: background 0.2s; }
+        .submit-btn:hover { background: #2d4a7c; }
+        
+        .footer { text-align: center; padding: 30px; color: #666; font-size: 13px; }
+        .footer a { color: #1a365d; }
+        
+        @media (max-width: 600px) {
+            .agent-info { float: none; text-align: left; margin-top: 15px; }
+            .inline-group { flex-direction: column; }
+            .inline-group .form-group { min-width: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="agent-info">
+                <strong>Chris Carter, REALTOR®</strong>
+                Keller Williams Innovate<br>
+                NC License #353368
+            </div>
+            <h1>Commercial Tenant Intake Form</h1>
+            <p>Precious Metals / Coin & Bullion Retail</p>
+        </header>
+
+        <form action="https://formsubmit.co/Chris-Carter@KW.com" method="POST">
+            <input type="hidden" name="_subject" value="New Commercial Tenant Intake Form Submission">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+
+            <div class="section">
+                <div class="section-header">A. Business Information</div>
+                <div class="section-content">
+                    <div class="inline-group">
+                        <div class="form-group">
+                            <label class="required">Business Name</label>
+                            <input type="text" name="business_name" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Date</label>
+                            <input type="date" name="form_date">
+                        </div>
+                    </div>
+                    <div class="inline-group">
+                        <div class="form-group">
+                            <label class="required">Owner/Decision Maker</label>
+                            <input type="text" name="owner_name" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Entity Type</label>
+                            <select name="entity_type">
+                                <option value="">Select...</option>
+                                <option>Sole Proprietor</option>
+                                <option>LLC</option>
+                                <option>Corporation</option>
+                                <option>Partnership</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="inline-group">
+                        <div class="form-group">
+                            <label class="required">Phone</label>
+                            <input type="tel" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="required">Email</label>
+                            <input type="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="inline-group">
+                        <div class="form-group">
+                            <label>Target Move-In Date</label>
+                            <input type="date" name="move_in_date">
+                        </div>
+                        <div class="form-group">
+                            <label>Years in Business</label>
+                            <input type="text" name="years_in_business">
+                        </div>
+                        <div class="form-group">
+                            <label>New Venture?</label>
+                            <div class="radio-group">
+                                <label class="radio-item"><input type="radio" name="new_venture" value="Yes"> Yes</label>
+                                <label class="radio-item"><input type="radio" name="new_venture" value="No"> No</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">B. Business Model & Operations</div>
+                <div class="section-content">
+                    <div class="form-group">
+                        <label class="required">Services Offered</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-item"><input type="checkbox" name="services[]" value="Buy/Sell Coins"> Buy/Sell Coins</label>
+                            <label class="checkbox-item"><input type="checkbox" name="services[]" value="Buy/Sell Bullion"> Buy/Sell Bullion</label>
+                            <label class="checkbox-item"><input type="checkbox" name="services[]" value="Appraisals"> Appraisals</label>
+                            <label class="checkbox-item"><input type="checkbox" name="services[]" value="Scrap Gold"> Scrap Gold</label>
+                            <label class="checkbox-item"><input type="checkbox" name="services[]" value="Jewelry/Watches"> Jewelry/Watches</label>
+                            <label class="checkbox-item"><input type="checkbox" name="services[]" value="Numismatics"> Numismatics</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Other Services</label>
+                        <input type="text" name="other_services">
+                    </div>
+                    <div class="inline-group">
+                        <div class="form-group">
+                            <label>Planned Business Hours</label>
+                            <input type="text" name="hours" placeholder="e.g., Mon-Fri 10am-6pm">
+                        </div>
+                        <div class="form-group">
+                            <label>Expected Daily Traffic</label>
+                            <select name="daily_traffic">
+                                <option value="">Select...</option>
+                                <option>1-5 customers</option>
+                                <option>5-10 customers</option>
+                                <option>10-20 customers</option>
+                                <option>20+ customers</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Customer Access Model</label>
+                        <div class="radio-group">
+                            <label class="radio-item"><input type="radio" name="access_model" value="Appointment Only"> Appointment Only</label>
+                            <label class="radio-item"><input type="radio" name="access_model" value="Open Retail"> Open Retail</label>
+                            <label class="radio-item"><input type="radio" name="access_model" value="Hybrid"> Hybrid</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">C. Space Requirements</div>
+                <div class="section-content">
+                    <div class="inline-group">
+                        <div class="form-group">
+                            <label class="required">Ideal Square Footage</label>
+                            <input type="text" name="ideal_sf" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Minimum Acceptable SF</label>
+                            <input type="text" name="min_sf">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Floor Plan Requirements</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-item"><input type="checkbox" name="floor_plan[]" value="Open Showroom"> Open Showroom</label>
+                            <label class="checkbox-item"><input type="checkbox" name="floor_plan[]" value="Private Office"> Private Office</label>
+                            <label class="checkbox-item"><input type="checkbox" name="floor_plan[]" value="Back Room"> Back Room</label>
+                            <label class="checkbox-item"><input type="checkbox" name="floor_plan[]" value="Safe/Vault"> Safe/Vault</label>
+                            <label class="checkbox-item"><input type="checkbox" name="floor_plan[]" value="Display Cases"> Display Cases</label>
+                            <label class="checkbox-item"><input type="checkbox" name="floor_plan[]" value="Waiting Area"> Waiting Area</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Electrical Requirements</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-item"><input type="checkbox" name="electrical[]" value="Dedicated Circuits"> Dedicated Circuits</label>
+                            <label class="checkbox-item"><input type="checkbox" name="electrical[]" value="High-Lumen Lighting"> High-Lumen Lighting</label>
+                            <label class="checkbox-item"><input type="checkbox" name="electrical[]" value="Extra Outlets"> Extra Outlets</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">D. Location Preferences</div>
+                <div class="section-content">
+                    <div class="form-group">
+                        <label>Preferred Location Type</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-item"><input type="checkbox" name="location_type[]" value="Strip Center"> Strip Center</label>
+                            <label class="checkbox-item"><input type="checkbox" name="location_type[]" value="Stand-Alone"> Stand-Alone</label>
+                            <label class="checkbox-item"><input type="checkbox" name="location_type[]" value="Office Plaza"> Office Plaza</label>
+                            <label class="checkbox-item"><input type="checkbox" name="location_type[]" value="Downtown"> Downtown</label>
+                            <label class="checkbox-item"><input type="checkbox" name="location_type[]" value="No Preference"> No Preference</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Visibility Preference</label>
+                        <div class="radio-group">
+                            <label class="radio-item"><input type="radio" name="visibility" value="High Traffic"> High Traffic</label>
+                            <label class="radio-item"><input type="radio" name="visibility" value="Moderate"> Moderate</label>
+                            <label class="radio-item"><input type="radio" name="visibility" value="Discreet"> Discreet</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Parking Requirements</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-item"><input type="checkbox" name="parking[]" value="Front Door"> Front Door</label>
+                            <label class="checkbox-item"><input type="checkbox" name="parking[]" value="Rear/Private"> Rear/Private</label>
+                            <label class="checkbox-item"><input type="checkbox" name="parking[]" value="Ample"> Ample</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Preferred Areas/Submarkets</label>
+                        <textarea name="preferred_areas" rows="2"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">E. Security Requirements</div>
+                <div class="section-content">
+                    <div class="form-group">
+                        <label>Required Security Features</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-item"><input type="checkbox" name="security[]" value="CCTV/Cameras"> CCTV/Cameras</label>
+                            <label class="checkbox-item"><input type="checkbox" name="security[]" value="Alarm System"> Alarm System</label>
+                            <label class="checkbox-item"><input type="checkbox" name="security[]" value="Reinforced Entry"> Reinforced Entry</label>
+                            <label class="checkbox-item"><input type="checkbox" name="security[]" value="Vault Support"> Vault Support</label>
+                            <label class="checkbox-item"><input type="checkbox" name="security[]" value="Bollards"> Bollards</label>
+                            <label class="checkbox-item"><input type="checkbox" name="security[]" value="Rear Entrance"> Rear Entrance</label>
+                            <label class="checkbox-item"><input type="checkbox" name="security[]" value="Bullet Glass"> Bullet Glass</label>
+                            <label class="checkbox-item"><input type="checkbox" name="security[]" value="Man-Trap"> Man-Trap</label>
+                        </div>
+                    </div>
+                    <div class="inline-group">
+                        <div class="form-group">
+                            <label>Approximate Inventory Value</label>
+                            <select name="inventory_value">
+                                <option value="">Select...</option>
+                                <option>Under $50,000</option>
+                                <option>$50,000 - $100,000</option>
+                                <option>$100,000 - $250,000</option>
+                                <option>$250,000 - $500,000</option>
+                                <option>$500,000+</option>
+                                <option>Prefer not to say</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Insurance Carrier</label>
+                            <input type="text" name="insurance_carrier">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">F. Budget & Lease Terms</div>
+                <div class="section-content">
+                    <div class="inline-group">
+                        <div class="form-group">
+                            <label class="required">Monthly Rent Budget</label>
+                            <input type="text" name="rent_budget" required placeholder="$ per month">
+                        </div>
+                        <div class="form-group">
+                            <label>CAM Comfort Range</label>
+                            <div class="radio-group">
+                                <label class="radio-item"><input type="radio" name="cam_range" value="$3-4/SF"> $3-4/SF</label>
+                                <label class="radio-item"><input type="radio" name="cam_range" value="$5-7/SF"> $5-7/SF</label>
+                                <label class="radio-item"><input type="radio" name="cam_range" value="Flexible"> Flexible</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Preferred Lease Term</label>
+                        <div class="radio-group">
+                            <label class="radio-item"><input type="radio" name="lease_term" value="1-2 Years"> 1-2 Years</label>
+                            <label class="radio-item"><input type="radio" name="lease_term" value="3-5 Years"> 3-5 Years</label>
+                            <label class="radio-item"><input type="radio" name="lease_term" value="5+ Years"> 5+ Years</label>
+                            <label class="radio-item"><input type="radio" name="lease_term" value="Flexible"> Flexible</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>TI Expectations</label>
+                        <textarea name="ti_expectations" rows="2"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">G. Licensing & Compliance</div>
+                <div class="section-content">
+                    <div class="form-group">
+                        <label>Will you buy precious metals from the public?</label>
+                        <div class="radio-group">
+                            <label class="radio-item"><input type="radio" name="buy_from_public" value="Yes"> Yes (NC Permit Required)</label>
+                            <label class="radio-item"><input type="radio" name="buy_from_public" value="No"> No</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Do you have a NC Precious Metals Dealer Permit?</label>
+                        <div class="radio-group">
+                            <label class="radio-item"><input type="radio" name="nc_permit" value="Yes"> Yes</label>
+                            <label class="radio-item"><input type="radio" name="nc_permit" value="No"> No</label>
+                            <label class="radio-item"><input type="radio" name="nc_permit" value="Pending"> Pending</label>
+                            <label class="radio-item"><input type="radio" name="nc_permit" value="N/A"> N/A</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Will you conduct bullion transactions?</label>
+                        <div class="radio-group">
+                            <label class="radio-item"><input type="radio" name="bullion" value="Yes"> Yes</label>
+                            <label class="radio-item"><input type="radio" name="bullion" value="No"> No</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Familiar with AML/Form 8300 compliance?</label>
+                        <div class="radio-group">
+                            <label class="radio-item"><input type="radio" name="aml_compliance" value="Yes"> Yes</label>
+                            <label class="radio-item"><input type="radio" name="aml_compliance" value="No"> No</label>
+                            <label class="radio-item"><input type="radio" name="aml_compliance" value="Need Info"> Need More Info</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">H. Additional Information</div>
+                <div class="section-content">
+                    <div class="form-group">
+                        <label>Tenant Improvements Needed</label>
+                        <textarea name="ti_needed" rows="3" placeholder="Describe any build-out requirements..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Additional Notes or Questions</label>
+                        <textarea name="additional_notes" rows="3"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; padding: 20px;">
+                <button type="submit" class="submit-btn">Submit Intake Form</button>
+            </div>
+        </form>
+
+        <div class="footer">
+            <p>Chris Carter, REALTOR® | Keller Williams Innovate | NC License #353368</p>
+            <p><a href="mailto:Chris-Carter@KW.com">Chris-Carter@KW.com</a></p>
+        </div>
+    </div>
+</body>
+</html>
